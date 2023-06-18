@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Hrana</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/login.js" defer></script>
+    <link rel = "stylesheet" href="css/prvi.css">
+    
+</head>
+<body onload="load()">
+    <div id="cnt">
+        
+        <div id="naslov">
+            <h1>Knjiga recepata</h1>
+        </div>
+        
+
+        <div id="login" style="display:flex; justify-content: center;align-items: center;">
+            <div id="login2">
+                <div id="cnt-user">
+                    <div>Username</div>
+                    <div><input id="inp-user" type="text"></div>
+                </div>
+                <div id="cnt-pass">
+                    <div>Password</div>
+                    <div><input id="inp-pass" type="password"></div>
+                </div><br>
+                <button id="btn-login" onclick="checkLogin()">Uloguj se</button>
+                <br><br>
+                <div id="error-msg"></div>
+            </div>
+        </div>
+
+        <a id="btn-logout"><img src="images/exit.png" style="height: 30px; margin-bottom:10px; float:right; margin-right: 40px; " onclick="hide(true)"></img></a>
+        <!--
+        <button id="btn-logout" onclick="hide(true)" style="margin-bottom:10px; float:right">Izloguj se</button>
+        -->
+        <br><br><br>
+
+        <div id="prikaz">
+            <div id="navb" style="position:sticky; top:0px; border: 5px double #9e8579; ">
+                <div id="populatno"><a href="prvi.html" target="_blank">Početak</a></div>
+                <div id="dorucak"><a href="dorucak.html" >Doručak</a></div>
+                <div id="rucak"><a href="rucak.html" >Ručak</a></div>
+                <div id="vecera"><a href="vecera.html" >Večera</a></div>
+                <div id="galerija"><a href="galerija.html" >Galerija</a></div>
+            </div>
+
+            <div id="tekstCnt">
+                <div id="tekst">
+                    <p>Dobrodošli na naš književni kutak ukusa! Otkrijte našu zbirku inspirativnih recepata koji će vas oduševiti. Isprobajte raznolike okuse, jednostavno pripremljene i savršene za vaše kulinarske avanture. Ispunite svoje kulinarske snove s našim jedinstvenim knjigama recepata.</p>
+                </div>
+                <div id="slika1">
+                    <h1>DORUčAK</h1>
+                    <img src="images/breakie/0.jpg">
+                    <p>Istražite našu zbirku ukusnih doručaka! Od klasičnih jaja i hrskave slanine do zdravih voćnih salata i veganskih alternativa, naši recepti će vas inspirirati za savršen početak dana. Oslobodite svoju kreativnost u kuhinji s našim jednostavnim i ukusnim doručkovima.</p>
+                </div>
+                <div id="slika2">
+                    <h1>RUčAK</h1>
+                    <img src="images/lunch/0.jpg">
+                    <p>Otkrijte našu široku paletu raskošnih ručkova! Od ukusnih sendviča i sočnih burgera do svježih salata i slasnih glavnih jela, naša kolekcija recepata za ručak pružit će vam obilje opcija za svaki ukus. Uživajte u bogatim okusima i jednostavno pripremljenim obrocima koji će ispuniti vaša kulinarska očekivanja.</p>
+                </div>
+                <div id="slika3">
+                    <h1>VEčERA</h1>
+                    <img src="images/dinners/0.jpg">
+                    <p>Dobrodošli u našu čarobnu večernju kolekciju recepata! Uživajte u intimnoj večeri s našim ukusnim jelima za večeru. Bilo da tražite elegantna jela, romantične obroke ili obiteljske favorite, naši recepti će vam pomoći stvoriti nezaboravne večernje trenutke. Otkrijte širok spektar okusa i upotpunite večernje trenutke s našom inspirativnom zbirkom recepata.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

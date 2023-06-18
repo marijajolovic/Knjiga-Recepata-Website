@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doručak</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body onload="loadData('xmls/breakie_dishes.xml')">
+    <div id="cnt">
+        
+        <div id="naslov">
+            <h1>Doručak</h1>
+        </div>
+        
+        <div id="navb">
+            <div id="populatno"><a href="prvi.html">Početak</a></div>
+            <div id="dorucak"><a href="dorucak.html" >Doručak</a></div>
+            <div id="rucak"><a href="rucak.html" >Ručak</a></div>
+            <div id="vecera"><a href="vecera.html" >Večera</a></div>
+            <div id="galerija"><a href="galerija.html" >Galerija</a></div>
+        </div>
+        
+        <div id="search">
+           <!-- <input id="searchName" type="text" placeholder="Trazi po nazivu.." onkeyup="showData()"></input>
+           -->
+            <fieldset>
+                <legend>Ime</legend>
+                <input id="inp-name" type="text" placeholder="Ime..." onkeyup="showData()">
+            </fieldset>
+            <fieldset>
+                <legend>Cena pripreme</legend>
+                <label>
+                    <input id="rb-cena-manja" type="radio" name="rb-cena"  onchange="showData()"> 
+                    Manje
+                </label>
+                <label>
+                    <input id="rb-cena-veca" type="radio" name="rb-cena" checked onchange="showData()">
+                    Veće
+                </label>
+                <input id="inp-cena" type="text" placeholder="Cena..." onkeyup="showData()">
+            </fieldset>
+
+            <!--
+            <fieldset>
+                <legend>Sastojci</legend>
+                <select id="sel-ingredient" onchange="showData()"></select>
+            </fieldset>-->
+
+            <fieldset id="dugme">
+            <!--    <legend>Izbrisi filtere</legend>
+                <a href=""><img src="x.png" style="height:40px"></img></a>
+                -->
+                <button onclick="clearFilters()">
+                    <img src="images/x.png" style="height:40px"></img></a>
+                </button>
+            </fieldset>
+
+        </div>
+        
+        <div id = "data">
+            <div id="podaci"></div> 
+            
+            
+            
+            <div id="desno">
+                <div id="naslovRecept" hidden=true style="width:370px;"><h1 style="font-size: 25px;">Recept</h1></div>
+                <div id="recept"></div>
+                <div id="lajkovano">
+                    <div id="naslovLajkovanih"></div>  
+                    <div id="tabelaLajkovanih"></div>
+                    <div id="total"></div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

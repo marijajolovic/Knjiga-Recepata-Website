@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerija</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/galerija.js" defer></script>
+
+    <style>
+        div#cnt{
+            width: 960px;
+            height: 600px;
+        }
+        #gal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            margin-top: 50px;
+        }
+        img#slika{
+            height: 300px;
+            width: 450px;
+        }
+
+
+        .gallery {
+            position: relative;
+            left: 26%;
+            height: 300px;
+            width: 450px;
+            overflow: hidden;
+
+            
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            margin-top: 50px;
+        }
+
+        .gallery-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+    </style>
+</head>
+<body onload="loaduj()">
+    <div id="cnt">
+        
+        <div id="naslov">
+            <h1>Galerija</h1>
+        </div>
+        
+        <div id="navb">
+            <div id="pocetno"><a href="prvi.html" >Početna</a></div>
+            <div id="dorucak"><a href="dorucak.html" >Doručak</a></div>
+            <div id="rucak"><a href="rucak.html" >Ručak</a></div>
+            <div id="vecera"><a href="vecera.html">Večera</a></div>
+            <div id="galerija"><a href="galerija.html" >Galerija</a></div>
+            
+        </div>
+        
+        <!---
+        <div id="gal">
+            <img id ="slika"> src="dinners/9.jpg"-->
+        <!--</div>-->
+        
+        <div class="gallery" id="gallaryId">
+        </div>
+        
+        
+    </div>
+</body>
+</html>

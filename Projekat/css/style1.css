@@ -1,0 +1,57 @@
+body{
+    background-color: #b39283;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#cnt{
+    background-color: #E1C5C0;
+    width: 960px;
+    height : 80%;
+    border-radius: 15px 15px;
+}
+h1 {
+    
+    font-family: 'Arial', sans-serif; /* You can change the font family to your preference */
+    font-size: 48px; /* Adjust the font size as needed */
+    /*color: #e1d0d0; /* Brown color */
+    color: #efe0e0;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    text-shadow:3px 3px #937465 ;
+    -webkit-text-stroke: black 1px;
+}
+#navb{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color:  #efe0e0;
+    margin-bottom: 10px;
+
+}
+#navb > div{
+
+    font-size: 18px;
+    padding: 10px;
+   
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#navb>div>a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+#navb>div:hover
+{
+    background-color: #b39283;
+}
+
+#navb>div:hover a{
+    color: white;
+}
+/*ecd7d7*/

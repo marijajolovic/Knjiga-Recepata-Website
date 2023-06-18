@@ -1,0 +1,49 @@
+#tekst > p{
+    margin: 30px 40px;
+    padding: 10px;
+    text-align: justify;
+    border: 2px groove #937465;
+}
+#tekstCnt > div {
+    margin:  30px 10px;
+    padding: 20px;
+    border: 2px double white;
+    height: 200px;
+}
+#tekstCnt > div:first-child
+{
+    padding: 0;
+    border: none;
+    height: 100px;
+    
+}
+#tekstCnt > div > img{
+    float: left;
+    height: 180px;
+    margin-right: 20px;
+}
+#tekstCnt > div:nth-child(odd) > img
+{
+    float: right;
+    margin-left: 20px;
+}
+#tekstCnt h1 {
+    position: relative;
+    bottom: 20px;
+    left: 80%;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+    margin-block-start: 0em;
+    margin-top: -20px;
+    background-color: #E1C5C0;
+    width:fit-content;
+
+}
+#tekstCnt > div:nth-child(even) > h1
+{
+    left: 0%;
+}
+#tekstCnt p{
+    font-size: 17px;
+}
